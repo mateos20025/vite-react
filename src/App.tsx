@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import mateoPhoto from './assets/mateo.jpg'
 import './App.css'
 
 function App() {
@@ -8,6 +9,13 @@ function App() {
 
   return (
     <>
+      {/* Sección de Perfil */}
+      <div className="profile-card">
+        <img src={mateoPhoto} className="profile-photo" alt="Foto de Mateo" />
+        <h1 className="profile-name">Mateo Sotomayor</h1>
+        <p className="profile-role">Junior Developer</p>
+      </div>
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
